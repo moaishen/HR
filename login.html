@@ -1,0 +1,105 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html charset=utf-8" />
+<title>人事档案管理系统</title>
+<body >
+
+<head>
+<link rel="shortcut icon" href="images/favicon.ico" >
+<style type="text/css">
+a:link,a:visited{
+	color:white;
+text-decoration:none;
+}
+a:hover{
+color:white;
+}
+body
+{
+background:url(images/6.jpg) top center no-repeat; background-size:cover;
+}
+.loginbox{
+font:18px/25px "黑体";
+background-color:RGBA(220,220,220,0.5); 
+
+border-radius: 20px;
+
+width:450px;
+margin:80px auto;
+padding:60px;
+overflow:hidden;
+}
+.logo{
+margin:20px;
+text-align:center;
+}
+.form{
+padding:10px;
+color:white;
+width:100%;
+text-align:center;
+color:black;
+}
+.inputbox{
+box-shadow: 10px 10px 5px #888888;
+padding-left:2em;
+background-color:RGBA(200,200,200,0.6);
+color:RGB(50,0,50);
+font:18px/18px "黑体";
+font-weight:bold;
+width:300px;
+height:33px;
+margin:20px auto;
+border:1px solid gray;
+}
+.userinput{
+BACKGROUND-IMAGE: url(images/user.png); 
+BACKGROUND-REPEAT: no-repeat;
+}
+.passwordinput{
+BACKGROUND-IMAGE: url(images/password.png); 
+BACKGROUND-REPEAT: no-repeat;
+}
+td{text-align: right;color:white;font:18px/24px;}
+#submit_btn{
+border:1px solid gray;
+margin-top:10px;
+font:18px/25px "黑体";
+width:100px;
+height:50px;
+background-color:RGBA(200,200,200,0.8);
+color:black;
+border-radius: 10px;
+}
+</style>
+<script type="text/ecmascript" src="../js/sha1.js"></script>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<!--<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+<script src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script>-->
+<script type="text/javascript" src="js/tooltips.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+</head>
+<div id="loginbox" class="loginbox";>
+<div class="logo">
+<a href="login.html"><h2>人事档案管理系统</h2></a>
+</div>
+<!--
+<div style="padding:10px;background-color:RGB(180,180,180);color:white;font:20px/15px '宋体';text-align:center; width:300px;float:right;">登录</div>-->
+<form id="form" class="form" action="index.php" method="post">
+<table>
+<tr>
+<td>员工编号：</td>
+<td><input class="inputbox userinput" type="text" id="ID" name="userid"></td>
+</tr>
+<tr>
+<td>系统密码：</td>
+<td><input class="inputbox passwordinput" type="password" id="password" name="password"></td>
+</tr>
+</table>
+<!--<input class="inputbox" type="submit" value="登录">-->
+<button type="button"  id="submit_btn" >登录</button>
+</form>
+</div>
+</body>
+</html>
